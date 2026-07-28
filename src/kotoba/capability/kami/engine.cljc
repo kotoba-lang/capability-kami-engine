@@ -1,0 +1,5 @@
+(ns kotoba.capability.kami.engine
+  "Importable contract for kami/engine.")
+
+(def manifest
+  {:schema "kotoba.capability.repository.v1", :capability/version 1, :capability/dependencies #{}, :capability/imports #{:kami-despawn-within! :kami-axis :kami-set-velocity! :kami-nearest-tagged :kami-despawn :kami-tick-n :kami-get-z :kami-get-x :kami-get-y :kami-count-tagged :kami-set-position3! :kami-move-tagged-toward! :kami-set-velocity3! :kami-spawn :kami-rand :kami-set-position!}, :authority "kotoba-lang/kotoba-core-contracts", :capability/default-policy :autonomous, :capability/artifact {:format :wasm-component, :digest-required? true, :signature-required? true}, :capability/radicle-rid nil, :capability/repository "kotoba-lang/capability-kami-engine", :capability/id "kami/engine", :capability/effects #{:simulation-read :randomness :simulation-write}, :capability/provider-status :contract-only})
